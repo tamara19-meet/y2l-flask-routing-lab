@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<P> YOU COULD BUY ALL OF THESE PRODUCTS </P>
+<ul>
+	{% for pet in pets %}
+	<li> {{pet}} </li>
+	{% endfor %}
+</ul>
+<a href= {{ url_for('home_page')}}>Home</a>
+
+</body>
+</html>
